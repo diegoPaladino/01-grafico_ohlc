@@ -21,5 +21,8 @@ import investpy as inv
 # lista = inv.get_indices_list('brazil')
 # print(lista)
 
-lista_2 = inv.get_stocks('brazil')
-print(lista_2)
+# lista_2 = inv.get_stocks('brazil')
+# print(lista_2)
+
+info = inv.get_stock_information('ELEK4','brazil')
+print(info)
