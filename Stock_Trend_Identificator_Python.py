@@ -10,12 +10,12 @@ import matplotlib.dates as mdates
 from mpl_finance import candlestick_ohlc
 from mpl_finance import candlestick_ohlc
 
-acao2 = 'AGRO3'
+acao2 = 'ELEK4'
 
 df_bolsa = investpy.get_stock_historical_data(stock=acao2,
                                           country='brazil',
                                           from_date='01/01/2010',
-                                          to_date='24/09/2020')
+                                          to_date='30/09/2020')
 
 df_bolsa.index.names = ['Data']
 df_bolsa.columns = ['Abertura', 'Maximo', 'Minimo', 'Fechamento', 'Volume', 'Moeda']
